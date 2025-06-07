@@ -5,10 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63eb13ac5c.js" crossorigin="anonymous"></script>
     <title>Password Validation Check</title>
 </head>
 
 <body>
+
+    <div class="container">
+        <div class="input_box">
+            <input type="password" placeholder="Create Password">
+            <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="content">
+            <p>Password must contains!</p>
+
+            <ul class="list">
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> At least 8 characters lenght</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> At least 1 number (1..9) </span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> At least 1 lowercase letter (a...z)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> At least 1 special symbol (!...$)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> At least 1 uppercase letter (A...Z)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 
