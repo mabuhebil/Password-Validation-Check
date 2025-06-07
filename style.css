@@ -56,6 +56,17 @@ body {
 
 }
 
+.container .content .list li.valid i {
+    color: #6891e9;
+    font-size: 20px;
+}
+
+.container .content .list li.valid span {
+    color: #858282;
+
+}
+
+
 .container .content .list i {
     font-size: 10px;
     color: #858282;

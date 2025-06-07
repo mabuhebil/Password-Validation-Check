@@ -1,6 +1,6 @@
 const input = document.querySelector('.container .input_box input');
 const eye = document.querySelector(' .container .input_box  i')
-
+const list = document.querySelectorAll('ul li')
 
 const reqiurments = [
     { regex: /.{8,}/, index: 0 },
@@ -13,7 +13,16 @@ const reqiurments = [
 input.addEventListener("keyup", (e) => {
 
     reqiurments.forEach(item => {
+        const IsVaild = item.regex.test(e.target.value)
+        const li = list[item.index]
 
+        if (IsVaild) {
+            li.firstElementChild.className = 'fa-solid fa-check';
+            li.classList.add('valid')
+        } else {
+            li.firstElementChild.className = 'fa-solid fa-circle';
+            li.classList.remove('valid')
+        }
     })
 })
 
